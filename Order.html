@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FettFrei Gmbh</title>
+        <!--Website scales with device width-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="StyleSheet" type="text/css" href="style.css" />
+    </head>
+    
+    <body>
+        <ul class="menu">
+          <li><a class="Home" href="main.html"><img src="Sources\Logo.png" ,width="44" height="44"/></a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="sources.html">Quellen</a></li>
+        </ul>
+
+        <fieldset class="formtxt">
+            <legend>Produkt</legend>
+            <form>
+                <table>
+                    <tr>
+                        <td><label class="input">Artikel:</label></td>
+                        <td><input type="text" placeholder="Bitte Artikel eingeben" class="ef"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="input">Anzahl:</label></td>
+                        <td><input type="text" placeholder="Bitte Anzahl eingeben" class="ef"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="input">Rabattcode:</label></td>
+                        <td><input id="rabattcode" type="text" placeholder="Bitte Rabattcode eingeben" class="ef"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button id="rabatt" onclick="applyDiscount()" class="buybutton">Rabatt anwenden</button></td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+
+        <fieldset class="formtxt"><legend>Bezahlung</legend><br>
+        <label for="art" class="input">Art:</label> 
+            <input type="radio" name="kraft" id="kraft" value="kraft"><label>Klarna</label> 
+            <input type="radio" name="kraft" id="kraft" value="kraft"><label>VISA</label> 
+            <input type="radio" name="kraft" id="kraft" value="kraft"><label>PayPal</label> 
+            <input type="radio" name="kraft" id="kraft" value="kraft"><label>Mastercard</label>
+        </fieldset>
+        <fieldset class="formtxt">
+            <legend>Lieferadresse</legend>
+            <form>
+                <table>
+                    <tr>
+                        <td><label class="input">Anrede:</label></td>
+                        <td>
+                            <input type="radio" name="g" value="m">Herr 
+                            <input type="radio" name="g" value="w">Frau
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="input">Vorname:</label></td>
+                        <td><input type="text" placeholder="Bitte Vorname eingeben" class="ef"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="input">Nachname:</label></td>
+                        <td><input type="text" placeholder="Bitte Nachname eingeben" class="ef"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="input">Straße:</label></td>
+                        <td><input type="text" placeholder="Bitte Straße eingeben" class="ef"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="input">Hausnummer:</label></td>
+                        <td><input type="text" placeholder="Bitte Hausnummer eingeben" class="ef"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="input">Wohnort:</label></td>
+                        <td><input type="text" placeholder="Bitte Ort eingeben" class="ef"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="input">PLZ:</label></td>
+                        <td><input type="text" placeholder="Bitte PLZ eingeben" class="ef"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="input">Land:</label></td>
+                        <td><input type="text" placeholder="Bitte Land eingeben" class="ef"></td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+        <br>
+        <input type="submit" class="buybutton" value="Bestellung abschicken" style="margin-left: 50px;"> <input type="reset" class="buybutton" value="Bestellung abbrechen">
+    </body>
+    <footer>
+        <div class="footer" style="margin-top: 200px;">
+          <a class="footxt" href="impressum.html">Impressum</a>
+        </div>
+      </footer>
+    <script src="Order.js"></script>
+</html>
